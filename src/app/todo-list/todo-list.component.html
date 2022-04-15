@@ -1,0 +1,18 @@
+
+<ul class="list-group list-group-numbered">
+  <li class="list-group-item"  *ngFor="let todo of todoList">
+  <!-- <input type="text" [(ngModel)]="userid"> -->
+
+  <!-- <div>{{todo.id}}</div> -->
+  <!-- <p>{{todo.userId}}</p> -->
+  <div class="d-flex justify-content-between">
+  <p>{{todo.title}}<span [class.complete]="!todo.completed" class=" ms-3 p-2 rounded-pill inComplete">{{todo.completed}}</span></p>
+  </div>
+
+  </li>
+</ul>
+
+
+
+
+
